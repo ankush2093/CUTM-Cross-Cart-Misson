@@ -145,10 +145,10 @@ img {vertical-align: middle;}
 
 
 /* slider css */
-* {box-sizing: border-box;}
+/* * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
-img {vertical-align: middle;}
+img {vertical-align: middle;} */
 
 /* Slideshow container */
 .slideshow-container {
@@ -194,7 +194,7 @@ img {vertical-align: middle;}
 }
 .box{
   
-padding: 20px;
+
     background-color: rgb(235, 242, 242);
     width: 100%;
 

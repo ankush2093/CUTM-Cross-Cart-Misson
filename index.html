@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Cross Cart Projects</title>
     <link rel="stylesheet" href="main.css">
+   <!-- <link rel="stylesheet" href="components/slider.js"> -->
+    <link rel="stylesheet" href="components/styles.css">
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
   </head>
 
@@ -133,6 +135,7 @@
         </div>
 
       </div>
+
     </section>
     <!-- End About Section -->
        
@@ -188,23 +191,63 @@
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <button class="btn"><a href="https://www.instagram.com/md_saddab04/"target="-blank">Connect Me </a></button>
         
+
+
+        
       </div>
 
-
-
       
+      
+</section>
+
+
+<div class="box">
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    
+    <img  class="myimg"src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/102709/ntorq-125-right-front-three-quarter.jpeg?isig=0&q=75" style="width:100%">
+    <!-- <div class="text">Caption Text</div> -->
+    <div class="name">
+    <h2  >Gautam Kumar Sharma</h2>
+    <p class="title">B.Tech & Mechnical</p>
+    <button class="btn"><a href="https://www.instagram.com/md_saddab04/"target="-blank">Connect Me </a></button>
+  </div>
+  </div>
+  
+  <div class="mySlides fade">
+   
+    <img class="myimg" src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg?fit=fill&w=480&h=270" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img  class="myimg" src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Venue/9154/1655441194954/front-left-side-47.jpg?tr=w-375" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  
+  
+  
+  <div class="mySlides fade">
+  
+      <img  class="myimg" src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Venue/9154/1655441194954/front-left-side-47.jpg?tr=w-375" style="width:100%">
+      <div class="text">Caption Four</div>
+    </div>
+  
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
   </div>
 
-
-
-
-
-
-
-
-
-    </div>
-</section>
 <!--End of Team Section-->
 
 
@@ -490,6 +533,33 @@ tabindex="-1" role="dialog" aria-hidden="true">
           .then(response => alert("Thanks for Booking..! We Will Contact You Soon..."))
           .catch(error => console.error('Error!', error.message))
       })
+
+
+      let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+
+
+
     </script>
   
   

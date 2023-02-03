@@ -227,7 +227,7 @@ font-size: 14px;
 --------------------------------------------------------------*/
 .contact .info {
 padding: 20px 40px;
-background: #f7e759;
+background: #aff46b;
 color: #131313;
 text-align: center;
 border: 1px solid #fff;
@@ -407,143 +407,6 @@ border-bottom-left-radius: 6px;
 background-color: rgb(255, 255, 255);
 }
 
-.img-wrapper {
-width: 175px;
-height: 175px;
-clip-path: circle(50% at 50% 50%);
-}
-
-.name {
-font-size: 20px;
-font-weight: 700;
-margin-top: 28px;
-margin-right: 0px;
-margin-bottom: 5px;
-margin-left: 0px;
-line-height: 27px;
-}
-
-.position {
-line-height: 26px;
-color: rgb(0, 166, 127);
-font-weight: 700;
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 20px;
-margin-left: 0px;
-}
-
-.testimonial {
-color: rgb(122, 122, 122);
-font-size: 18px;
-line-height: 27px;
-}
-
-.outer-container {
-background-color: rgb(250, 250, 250);
-padding-top: 0px;
-padding-right: 50px;
-padding-bottom: 0px;
-padding-left: 50px;
-}
-
-.container-block {
-min-height: 75px;
-height: fit-content;
-width: 100%;
-padding-top: 10px;
-padding-right: 10px;
-padding-bottom: 10px;
-padding-left: 10px;
-display: block;
-}
-
-.swiper.team-swiper {
-max-width: 100%;
-width: 100%;
-height: fit-content;
-}
-
-.swiper-slide {
-display: flex;
-justify-content: flex-start;
-height: auto;
-}
-
-.swiper-pagination.container-block {
-position: relative;
-top: 0px;
-margin-top: 36px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px;
-}
-
-.swiper-container-horizontal &gt;
-
-.swiper-pagination-bullets .swiper-pagination-bullet {
-margin-top: 0px;
-margin-right: 4px;
-margin-bottom: 0px;
-margin-left: 4px;
-height: 12px;
-width: 12px;
-background-image: initial;
-background-position-x: initial;
-background-position-y: initial;
-background-size: initial;
-
-background-attachment: initial;
-background-origin: initial;
-background-clip: initial;
-background-color: rgb(0, 166, 127);
-}
-
-.swiper-wrapper {
-position: relative;
-top: 0px;
-}
-
-@media (max-width: 1024px) {
-.swiper-slide {
-  justify-content: center;
-}
-}
-
-@media (max-width: 500px) {
-.outer-container {
-  padding-top: 0px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  padding-left: 20px;
-}
-}
-
-
-
-
-
-
-html, body {
-position: relative;
-height: 100%;
-}
-body {
-background: #eee;
-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-font-size: 14px;
-color:#000;
-margin: 0;
-padding: 0;
-}
-.swiper-container {
-width: 100%;
-height: 100%;
-}
-.swiper-wrapper{
-padding-left: initial;
-margin: 0;
-}
 
 
 
@@ -553,35 +416,8 @@ margin: 0;
 
 
 
-.swiper-slide {
-text-align: center;
-font-size: 18px;
-background: #fff;
-width: 80%;
-border-right: 1px solid black;
-/* Center slide text vertically */
-display: -webkit-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-box-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-align-items: center;
-}
-/*     .swiper-slide:nth-child(2n) {
-width: 60%;
-}
-.swiper-slide:nth-child(3n) {
-width: 40%;
-} */
 
 
-/* Three columns side by side */
 
 
 
@@ -705,28 +541,6 @@ size: 10px;
 
 
 
-/* Routing Image */
-.new{
-font-size:100px;
-line-height:160px ;
-margin-left: -10px;
-border: 20px;
-
-
-color: transparent;
--webkit-text-stroke:1px #d2e316;
-background: url(img/back.png);
--webkit-background-clip: text;
-background-position: 0 0;
-animation: back 20s linear infinite;
-
-}
-
-@keyframes back{
-100%{
-    background-position: 2000px 0;
-}
-}
 
 
 
@@ -763,4 +577,13 @@ justify-content: center;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+}
+
+.form-control{
+ 
+ /* margin-left: auto; */
+ display: flex;
+ position: relative;
+ margin: auto;
+ padding: auto;
 }
